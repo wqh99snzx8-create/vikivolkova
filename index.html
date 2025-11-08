@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Právní a finanční poradenství</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #1c1c1c;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1581091012184-62db9b134b9b?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 10vh 20px;
+      text-align: center;
+      color: #f5f5f5;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    header h1, nav {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #e2c044;
+      margin-bottom: 10px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e2c044;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #e2c044;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .card {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 calc(45% - 20px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #e2c044;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      border-top: 3px solid #444;
+      margin-top: 50px;
+    }
+    @media(max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Právní a finanční poradenství</h1>
+    <nav>
+      <a href="#onas">O nás</a>
+      <a href="#obchodni-smlouvy">Obchodní a pracovní smlouvy</a>
+      <a href="#hypoteky">Hypotéky – Poradenství</a>
+      <a href="#hypoteky">Hypotéky – Refinancování</a>
+      <a href="#dane">Daňová optimalizace</a>
+      <a href="#dane">Přiznání a podání</a>
+      <a href="#investice">Finanční plánování</a>
+      <a href="#investice">Správa portfolia</a>
+    </nav>
+  </header>
+
+  <section id="onas">
+    <h2>O nás</h2>
+    <p>Jsme tým zkušených právníků a finančních poradců s více než 10 lety zkušeností. Naším cílem je poskytovat klientům komplexní a bezpečné poradenství v oblasti smluv, hypoték, daní a investic.</p>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.edecko.cz/wp-content/uploads/2021/05/Honza_Novak_eDecko.jpg" alt="Jan Novák">
+        <h3>Jan Novák</h3>
+        <p>Specialista na obchodní a pracovní smlouvy s praxí ve vedení právního oddělení.</p>
+      </div>
+      <div class="card">
+        <img src="https://media.licdn.com/dms/image/v2/C5603AQHGDFviO_ZbDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517222790935?e=2147483647&v=beta&t=H0WshKKJ_Egk1jWwQwXGura2yxVHZ7BqB-Oz_t9rxUc" alt="Eva Svobodová">
+        <h3>Eva Svobodová</h3>
+        <p>Finanční poradkyně zaměřená na hypotéky, investice a daňovou optimalizaci.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="obchodni-smlouvy">
+    <h2>Obchodní a pracovní smlouvy</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/800x180.png?text=Obchodní+smlouvy" alt="Obchodní smlouvy">
+        <h3>Obchodní smlouvy</h3>
+        <p>Pomůžeme vám s tvorbou, kontrolou a optimalizací obchodních smluv tak, aby chránily vaše zájmy.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/800x180.png?text=Pracovní+smlouvy" alt="Pracovní smlouvy">
+        <h3>Pracovní smlouvy</h3>
+        <p>Zajistíme správné znění pracovních smluv, dodatků a ukončení pracovního poměru podle platné legislativy.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="hypoteky">
+    <h2>Hypotéky</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60" alt="Poradenství hypotéky">
+        <h3>Poradenství</h3>
+        <p>Pomůžeme vybrat nejlepší hypotéku podle vašich možností a potřeb.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.hypoindex.cz/gatcontent/uploads/2020/10/shutterstock_1629137032-768x400.jpg" alt="Refinancování hypotéky">
+        <h3>Refinancování</h3>
+        <p>Analyzujeme stávající hypotéky a navrhneme úspornější řešení.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="dane">
+    <h2>Daně</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://rekvalifikacnikurzy.cz/clanky/wp-content/uploads/2022/01/danova-optimalizace-1080x675.jpeg" alt="Daňová optimalizace">
+        <h3>Daňová optimalizace</h3>
+        <p>Pomůžeme vám optimalizovat daňovou zátěž a navrhneme efektivní strategie pro snížení daní.</p>
+      </div>
+      <div class="card">
+        <img src="https://fs2-ct24.ceskatelevize.cz/image/YjYzNGM3M2YzOGI0MmE4Zao4_wQNt8qPfJBz_540ESDJcopgI4hk2o_5Gzlppip1qrn67G5dc6wPa10Rx8beOVlXK2sZz6IfK6hWUfC2KQKrpY0FDnRDMzrJuh11BTyvxDVRG7spN4DavNzzuHXXaTnWEcxEsknKUI5y6vEnAeDokduJlLpq3t0RvOq3IGn-juxbqAp6x7ofGDoaCxf4Nw.jpg?width=1024" alt="Přiznání a podání">
+        <h3>Přiznání a podání</h3>
+        <p>Poskytujeme kompletní služby v oblasti daňového přiznání a podání všech potřebných dokumentů.</p>
+      </div>
+    </div>
+  </section>
+
+    
+  <section id="investice">
+    <h2>Investice</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://financnizralost.cz/wp-content/uploads/2024/03/Financni-plan.jpg.webp" alt="Finanční plánování">
+        <h3>Finanční plánování</h3>
+        <p>Pomůžeme vám sestavit strategii pro vaše finanční cíle a plánování budoucnosti.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.objectgears.cz/imagedatas/konverzky/program-portfolio-management.png" alt="Správa portfolia">
+        <h3>Správa portfolia</h3>
+        <p>Postaráme se o správu vašich investic a optimalizaci portfolia pro maximální ziskovost.</p>
+      </div>
+    </div>
+  </section>
+
